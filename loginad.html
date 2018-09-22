@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+	<title>LOGIN</title>
+	<style>
+	<head>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 80px;
+  padding: 100px;
+  width: 60px;
+  height:70px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color:red;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+}
+
+.button:hover span {
+  padding-right: 25px;
+	background-color:white;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	</style>
+	</head>	
+	<body background="a.jpg">
+		<div align="center">
+		<font color="red" size="40"><p>ADMIN LOGIN</p></font>
+		<form id="form_login" action="adminLogin.jsp">
+		<table cellspacing="20">
+		<tr><td><font color="red" size="5">USERNAME</font></td>
+		<td><input type="text" name="txt_username" style="height:30;width:200"></td>
+		</tr>
+		<tr>
+		<td><font color="red" size="5">PASSWORD</font></td>
+		<td><input type="password" name="txt_password" style="height:30;width:200"></td>
+		</tr>	
+		<tr><td><a href=#><font color="red" size="4">logout</font></a></td><td><button class="button" style="height: 50px; width: 180px;color:red;background-color:yellow;font-size:25;display:inline-block;border-radius: 25px;"><span>LOGIN </span></button>
+		</td></tr>
+		</table>	
+		</form>
+		</div>
+		</body>
+</html>

@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+#outerbox
+{
+	width:1300px;
+	height:470px;
+	overflow:hidden;
+}
+#sliderbo
+{
+	position:relative;
+	width:12800px;
+	animation-name:sayantan;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+
+}
+#sliderbo img
+{
+	float:left;
+} 
+@keyframes sayantan{
+	0%
+	{
+		left:0px;
+	}
+	20%{
+			left:-200px;
+		}
+		25%{
+			left:-600px;
+		}
+		30%{
+			left:-1000px;
+		}
+	50%
+	{
+		left:-1000px
+	}
+	80%
+	{
+		left:-2000px;	
+	}
+	100%
+	{
+		left:-6000px;
+	}
+
+} 
