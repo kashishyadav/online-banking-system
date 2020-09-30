@@ -1,2 +1,2 @@
 # online-banking-system
-Online Banking system with j2ee,jdbc
+Online Banking system : a web application that is created using java server pages(jsp) along with database(jdbc)
